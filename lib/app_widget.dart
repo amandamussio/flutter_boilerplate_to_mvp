@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_boilerplate_to_mvp/core/routes/app_router.dart';
-import 'package:flutter_boilerplate_to_mvp/config/l10n/l10n.dart';
+import 'package:flutter_boilerplate_to_mvp/l10n/l10n.dart';
 import 'package:flutter_boilerplate_to_mvp/core/injection/service_locator.dart';
 
 class AppWidget extends StatelessWidget {

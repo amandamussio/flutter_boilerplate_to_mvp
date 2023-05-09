@@ -9,6 +9,7 @@ environment:
 dependencies:
   auto_route: ^6.4.0
   bloc: ^8.1.1
+  cloud_firestore: ^4.6.0
   dartz: ^0.10.1
   dio: ^5.1.1
   firebase_auth: ^4.5.0
@@ -18,16 +19,22 @@ dependencies:
   flutter_bloc: ^8.1.2
   flutter_localizations:
     sdk: flutter
+  formz: ^0.6.0
+  freezed_annotation: ^2.2.0
   get_it: ^7.4.0
   injectable: ^2.1.1
   intl: ^0.17.0
+  form_utils:
+    path: packages/form_utils
 
 dev_dependencies:
   auto_route_generator: ^6.2.0
   bloc_test: ^9.1.1
   build_runner: ^2.3.3
+  equatable: ^2.0.5
   flutter_test:
     sdk: flutter
+  freezed: ^2.3.3
   injectable_generator: ^2.1.5
   mocktail: ^0.3.0
   very_good_analysis: ^3.1.0

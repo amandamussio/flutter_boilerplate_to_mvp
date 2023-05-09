@@ -169,6 +169,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.1"
+  cloud_firestore:
+    dependency: "direct main"
+    description:
+      name: cloud_firestore
+      sha256: "1ba6da0f5c07323b62c3843da98d18f49020b0a337a2b3faf66e207609fa4742"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.6.0"
+  cloud_firestore_platform_interface:
+    dependency: transitive
+    description:
+      name: cloud_firestore_platform_interface
+      sha256: "804e212c180abb50d861e5cf18e86cd621806f7cf6ebf926e8871db7a7a7efe5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.13.0"
+  cloud_firestore_web:
+    dependency: transitive
+    description:
+      name: cloud_firestore_web
+      sha256: "4ecd040aaaa475096f2565e556e7b515b368a2cb893add50da31019fa8102d35"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.4.3"
   code_builder:
     dependency: transitive
     description:
@@ -241,6 +265,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.1.1"
+  equatable:
+    dependency: "direct dev"
+    description:
+      name: equatable
+      sha256: c2b87cb7756efdf69892005af546c56c0b5037f54d2a88269b4f347a505e3ca2
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -341,6 +373,37 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  form_utils:
+    dependency: "direct main"
+    description:
+      path: "packages/form_utils"
+      relative: true
+    source: path
+    version: "0.1.0+1"
+  formz:
+    dependency: "direct main"
+    description:
+      name: formz
+      sha256: b2b4cb99b228020d2c7185500eed1c02ca290dd4cc19edaf42df17f5dc546d5a
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.6.0"
+  freezed:
+    dependency: "direct dev"
+    description:
+      name: freezed
+      sha256: "73b58fe836dc05594451d8f740d97d5167886962d628b9f60a1fe945aa0a891f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.3"
+  freezed_annotation:
+    dependency: "direct main"
+    description:
+      name: freezed_annotation
+      sha256: aeac15850ef1b38ee368d4c53ba9a847e900bb2c53a4db3f6881cbb3cb684338
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   frontend_server_client:
     dependency: transitive
     description:

@@ -15,10 +15,10 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    LoginRoute.name: (routeData) {
+    HomeRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: LoginPage(),
+        child: const HomePage(),
       );
     },
     SplashRoute.name: (routeData) {
@@ -27,25 +27,31 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const SplashPage(),
       );
     },
-    SignupRoute.name: (routeData) {
+    SignUpRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const SignupPage(),
+        child: const SignUpPage(),
+      );
+    },
+    LoginRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: LoginPage(),
       );
     },
   };
 }
 
 /// generated route for
-/// [LoginPage]
-class LoginRoute extends PageRouteInfo<void> {
-  const LoginRoute({List<PageRouteInfo>? children})
+/// [HomePage]
+class HomeRoute extends PageRouteInfo<void> {
+  const HomeRoute({List<PageRouteInfo>? children})
       : super(
-          LoginRoute.name,
+          HomeRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'LoginRoute';
+  static const String name = 'HomeRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
@@ -65,15 +71,29 @@ class SplashRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [SignupPage]
-class SignupRoute extends PageRouteInfo<void> {
-  const SignupRoute({List<PageRouteInfo>? children})
+/// [SignUpPage]
+class SignUpRoute extends PageRouteInfo<void> {
+  const SignUpRoute({List<PageRouteInfo>? children})
       : super(
-          SignupRoute.name,
+          SignUpRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'SignupRoute';
+  static const String name = 'SignUpRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [LoginPage]
+class LoginRoute extends PageRouteInfo<void> {
+  const LoginRoute({List<PageRouteInfo>? children})
+      : super(
+          LoginRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'LoginRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

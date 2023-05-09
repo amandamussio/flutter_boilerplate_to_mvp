@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_boilerplate_to_mvp/core/injection/service_locator.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -28,7 +29,9 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
   Bloc.observer = const AppBlocObserver();
 
-  configureDependencies();
+  await configureDependencies();
+
+  await Firebase.initializeApp();
 
   await runZonedGuarded(
     () async => runApp(await builder()),
